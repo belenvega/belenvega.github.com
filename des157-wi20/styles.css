@@ -1,0 +1,48 @@
+#mySketch {
+    width: 800px;
+    height: 250px;
+}
+
+body {
+    width: 50%;
+    max-width: 1200px;
+    min-width: 800px;
+}
+
+#myPage {
+    margin: auto;
+}
+
+h1, h2 {
+    font-family: Helvetica;
+}
+
+#one {
+    background-color: (252, 186, 3);
+}
+
+ol li {
+    list-style-type: none;
+}
+
+ol li a {
+    font-family: Helvetica;
+    text-decoration: none;
+    color:red;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    
+    text-align: center;
+}
+footer p a {
+    font-family: Helvetica;
+    text-decoration: none;
+    color: black;
+    
+}
