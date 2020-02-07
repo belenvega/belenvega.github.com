@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Distance Converter</title>
+
+	<!--/ /-------- Normalize CSS --------/ /-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	
+	<!--/ /-------- Google Fonts --------/ /-->
+	<link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans&display=swap" rel="stylesheet">
+	
+	<!--/ /-------- My Styles --------/ /-->
+	<link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<h1>Miles to Kilometers Converter</h1>
+    
+    <div class="container top">
+    	<p>Type in a number of miles and click the button to convert the distance to kilometers.</p>
+        
+        <form method="post" action="somephpfile.php" id="convert">
+        
+        	<input type="text" name="distance" id="distance" placeholder="distance">
+            <input type="submit" name="convertdist" value="Convert Distance">
+        
+        </form>
+    </div>
+    <div class="container bottom" id="answer">
+    	<h2 class="invisible">Answer goes here</h2>
+    </div>
+    
+	<p id="directions">Press the "K" key to switch to kilometer converstion, press the "M" key to switch to mile conversion</p>
+	
+	<script>
+
+		var convertType = 0;
+		var kilo = document.getElementById("convert");
+		var  yourNum;
+
+		function kilometers(newNum) {
+			yourNum = Math.floor((newNum * 1.609344) * 1000) / 1000;
+			return yourNum;
+		}
+
+		function miles(newNum) {
+			yourNum = Math.floor((newNum * 0.621371192) * 1000) / 1000;
+			return yourNum;
+		}
+
+		document.addEventListener('keydown', function(event) {
+			var keyPressed = event.which;
+			var h1Tag = document.querySelector('h1');
+
+			if (keyPressed == 75) {
+				convertType = 1;
+				h1Tag.innerHTML = "Kilometers to Miles Converter";
+			} else if (keyPressed == 77) {
+				convertType = 0;
+				h1Tag.innerHTML = "Miles to Kilometers Converter";
+			}
+		});
+
+		kilo.addEventListener('submit', function(event) {
+			event.preventDefault();
+			var myNum = parseFloat(document.querySelector('input').value);
+			var divTag = document.getElementById('answer');
+
+			if (convertType == 0) {
+				divTag.style.color = "black";
+				divTag.innerHTML = `<h2>${myNum} miles converts to ${kilometers(myNum)} kilometers</h2>`;
+				
+			} else {
+				divTag.style.color = "black";
+				divTag.innerHTML = `<h2>${myNum} kilometers converts to ${miles(myNum)} miles</h2>`;
+			}
+				
+			/* } else if (convertType == 1) {
+				h2Tag.innerHTML = `${myNum} miles converts to ${kilometers(myNum)} kilometers`;
+
+			} else {
+				h2Tag.style.color = "black";
+				h2Tag.innerHTML = "please enter a number";
+			} */
+		});
+
+		/* document.addEventListener('keydown', function() {
+			
+			var keyPressed = event.which;
+
+			if (keyPressed == 75) {
+				var myNum = parseInt(document.querySelector('input').value);
+				
+				
+				h1Tag.innerHTML = `Kilometers to Miles Converter`;
+				newh2Tag.innerHTML = `${myNum} kilometers converts to ${Math.floor((myNum * 0.621371192) * 1000) / 1000} miles`;
+				
+			} else if (keyPressed == 77) {
+				var myNum = parseInt(document.querySelector('input').value);
+
+				h1Tag.innerHTML = `Miles to Kilometers Converter`;
+				h2Tag.innerHTML = `${myNum} miles converts to ${Math.floor((myNum * 1.609344) * 1000) / 1000} kilometers`;
+			}
+		}) */
+
+		/* document.addEventListener('keydown', function(event) {
+			event.preventDefault();
+			var keyPressed = event.which;
+			
+
+			if (keyPressed == 75) {
+				var h1Tag = document.querySelector('h1');
+				var h2Tag = document.querySelector('h2');
+				var kilo = document.querySelector('form');
+				
+				kilo.addEventListener('submit', function(event) {
+					event.preventDefault();
+					var myNum = parseInt(document.querySelector('input').value);
+
+					if (myNum) {
+						h1Tag.innerHTML = `Kilometers to Miles Converter`;
+						h2Tag.style.color = "black";
+						h2Tag.innerHTML = `${myNum} kilometers converts to ${Math.floor((myNum * 0.621371192) * 1000) / 1000} miles`;
+					} else {
+						h1Tag.innerHTML = `Kilometers to Miles Converter`;
+						h2Tag.style.color = "black";
+						h2Tag.innerHTML = "please enter a number";
+					}
+				});
+
+			} else if (keyPressed == 77) {
+
+				/* var h2Tag = document.querySelector('h2');
+				var kilo = document.querySelector('form'); */
+
+				/* kilo.addEventListener('submit', function (event) {
+					event.preventDefault();
+					var myNum = parseInt(document.querySelector('input').value);
+
+					if (myNum) {
+						h1Tag.innerHTML = `Miles to Kilometers Converter`;
+						h2Tag.style.color = "black";
+						h2Tag.innerHTML = `${myNum} miles converts to ${Math.floor((myNum * 1.609344) * 1000) / 1000} kilometers`;
+					} else {
+						h1Tag.innerHTML = `Miles to Kilometers Converter`;
+						h2Tag.style.color = "black";
+						h2Tag.innerHTML = "please enter a number";
+				}
+				});
+			}
+
+		}); */
+
+	</script>
+
+</body>
+</html>
