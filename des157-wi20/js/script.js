@@ -13,5 +13,4 @@ function setup() {
     fill(0);
     var circSize = random(50);
     rect(mouseX, mouseY, circSize, circSize * 2);
-    /* $("rect").fadeOut("slow"); */
   }

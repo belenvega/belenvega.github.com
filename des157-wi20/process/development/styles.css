@@ -1,0 +1,36 @@
+body {
+    width: 50%;
+    max-width: 1200px;
+    min-width: 800px;
+}
+
+#myPage {
+    margin: auto;
+}
+
+#myImage {
+    padding: 20px;
+    
+}
+
+#photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 3px solid black;
+}
+
+#text {
+    font-family: Helvetica;
+}
+
+h1 {
+    color: red;
+}
+
+a {
+    font-family: Helvetica;
+    text-decoration: none;
+    color: #333333;
+}
