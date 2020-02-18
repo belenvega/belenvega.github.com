@@ -55,12 +55,16 @@ input {
 }
 
 footer {
-    text-align: center;
+    
     color: white;
 }
 
-footer a {
+#validators {
+    text-align: center;
     font-family: Helvetica;
-    text-decoration: none;
+}
+
+a {
     color: white;
+    text-decoration: none;
 }
