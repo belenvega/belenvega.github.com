@@ -1,11 +1,7 @@
 body {
     background-color: #161616;
-}
-
-h1, form, p {
-    color: white;
-    font-family: Helvetica;
-    margin-left: 40px;
+    width: 75%;
+    margin: auto;
 }
 
 #container {
@@ -23,9 +19,23 @@ h1, form, p {
     flex: 2;
 }
 
+h1, form, p {
+    color: white;
+    font-family: Helvetica;
+}
+
+h1 {
+    padding-top: 25px;
+}
+
+p {
+    line-height: 40px;
+}
+
 img {
     display: block;
     margin: auto;
+    padding-top: 50px;
 }
 
 label {
@@ -44,3 +54,13 @@ input {
     padding: 2px 10px 2px 10px;
 }
 
+footer {
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    font-family: Helvetica;
+    text-decoration: none;
+    color: white;
+}

@@ -16,12 +16,12 @@
         var inputEight = document.getElementById("adjective").value;
         var paragraph = document.querySelector("p");
 
-        paragraph.innerHTML = `The first concert I ever went to was a ${inputOne} concert!! I was ${inputTwo} years old and I went with my best friend ${inputThree}!! At first, we were running late for the opening, so we had to ${inputFour} from the venue’s parking lot to make it on time!!But once we got in, we had so much fun listening to the ${inputFive} music, dancing ${inputSix}, and after the concert, I even went to the merchandise stand and bought myself a ${inputSeven}!! What a ${inputEight} experience I’ll never forget!!`
+        /* displays the madlib paragraph with user's inputs */
+        paragraph.innerHTML = `The first concert I ever went to was a ${inputOne} concert!! I was ${inputTwo} years old and I went with my best friend ${inputThree}!! At first, we were running late for the opening, so we had to ${inputFour} from the venue’s parking lot to make it on time!! But once we got in, we had so much fun listening to the ${inputFive} music, dancing ${inputSix}, and after the concert, I even went to the merchandise stand and bought myself a ${inputSeven}!! What a ${inputEight} experience I’ll never forget!!`
 
+        /* hides the form to display only the madlib paragraph */
         var cont = document.getElementById("one");
-        
-
-        cont.removeChild(cont.childNodes);
+        cont.removeChild(cont.children["baby"]);
 
     })
 
