@@ -25,6 +25,11 @@ article {
     padding-top: 20px;
 }
 
+#paragraphs {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
 #photo {
     display: block;
     margin: auto;
