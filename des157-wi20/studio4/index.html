@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Studio 4</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Mad Libs</h1>
+    </header>
+
+    <main>
+
+        <div id="container">
+            <img src="images/header.png" alt="header" width= 800px height= 250px>
+        </div>
+
+        <section>
+            <div id="original">
+                <h2>My First Concert!</h2>
+                <form id="theForm">
+                    <input type = "text" id = "musician"  placeholder="musician/band">
+                    <input type = "text" id = "number"  placeholder="number">
+                    <input type = "text" id = "name"  placeholder="name">
+                    <input type = "text" id = "verb"  placeholder="verb">
+                    <input type = "text" id = "adjective"  placeholder="adjective">
+                    <input type = "text" id = "adverb"  placeholder="adverb">
+                    <input type = "text" id = "noun"  placeholder="noun">
+                    <input type = "text" id = "otheradjective"  placeholder="adjective">
+                    <input type = "submit" value = "submit" id="submit" >
+                </form>
+            </div>
+        </section>
+
+        <section id="popup">
+            <div id="madlib">
+                <h3 id="title"></h3>
+                <p id="close"></p>
+                <p id="final"></p>
+                <button type="button" value="reset form" id="button">restart</button>
+            </div>
+        </section>
+        
+    </main>
+
+    <img src="images/mic.png" alt="mic" width= 100 height= 100 id="one" class="headline">
+    <img src="images/guitarpic.png" alt="guitarpic" width= 100 height= 100 id="two" class="headline">
+    <img src="images/drumsticks.png" alt="drumsticks" width= 100 height= 100 id="three" class="headline">
+    <img src="images/mic.png" alt="mic" width= 100 height= 100 id="four" class="headline">
+    <img src="images/guitarpic.png" alt="guitarpic" width= 100 height= 100 id="five" class="headline">
+    <img src="images/drumsticks.png" alt="drumsticks" width= 100 height= 100 id="six" class="headline">
+    <img src="images/mic.png" alt="mic" width= 100 height= 100 id="seven" class="headline">
+    <img src="images/drumsticks.png" alt="drumsticks" width= 100 height= 100 id="eight" class="headline">
+
+    <footer>
+        <p><a href="https://belenvega.github.io/des157-wi20/">Back to Portal Page</a></p>
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML</a> | <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
