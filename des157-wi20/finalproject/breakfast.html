@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Breakfast</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADING + HORIZONTAL NAVIGATION + USER/SEARCH ICONS -->
+    <header>
+        <h1>Good Food</h1>
+        <nav id="topnav">
+            <ul>
+                <li><a href="">Food Log</a></li>
+                <li><a href="index.html">Recipes</a></li>
+            </ul>
+        </nav>
+        <div id="icons">
+            <img src="images/searchicon.png" alt="searchicon" width= 25 height= 25>
+            <img src="images/usericon.png" alt="usericon" width= 25 height= 25>
+        </div>
+    </header>
+
+    <main id="content">
+        <!-- VERTICAL NAVIGATION -->
+        <div id="sidebar">
+            <button type="button" value="reset form" id="add">+ ADD RECIPE</button>
+            <nav id="sidenav">
+                <ul>
+                    <li><a href="" id="breakfast">Breakfast</a></li>
+                    <li><a href="" id="lunch">Lunch</a></li>
+                    <li><a href="" id="dinner">Dinner</a></li>
+                    <li><a href="" id="desserts">Desserts</a></li>
+                    <li><a href="" id="snacks">Snacks</a></li>
+                    <li><a href="" id="vegan">Vegan</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- HEADER IMAGE + RECIPE THUMBNAILS -->
+        <div id="myPage">
+            <section class="singleHeaders">
+                <div id="contain">
+                    <img src="images/breakfast.png" alt="breakfast" width= 600 height= 260 id="singleHeader">
+                </div>
+            </section>
+    
+            <section class="grid">
+                <div id="newItems" class="new">
+                    <img src="" width= 235 height= 160 id="theImage">
+                    <p id="newTitles"></p>
+                    <div id="time">
+                        <img src="images/timer.png" alt="timer" width= 15 height= 15>
+                        <p id="newMinutes"></p>
+                    </div>
+                </div>
+                <div id="items" class="one">
+                    <img src="images/acaibowl.jpg" alt="acaibowl" width= 235 height= 161>
+                    <p id="titles">The perfect breakfast acai bowl</p>
+                    <div id="time">
+                        <img src="images/timer.png" alt="timer" width= 15 height= 15>
+                        <p id="minutes">10 min</p>
+                    </div>
+                </div>
+                <div id="items" class="two">
+                    <img src="images/avacadotoast.jpg" alt="avocadotoast" width= 235 height= 160>
+                    <p id="titles">Egg-in-a-hole avocado toast</p>
+                    <div id="time">
+                        <img src="images/timer.png" alt="timer" width= 15 height= 15>
+                        <p id="minutes">10 min</p>
+                    </div>
+                </div>
+                <div id="items" class="three">
+                    <a href="bananawaffles.html">
+                        <img src="images/smallbwaffles.jpg" alt="bananawaffles" width= 235 height= 159>
+                    </a>
+                    <p id="titles">Healthy banana waffles!</p>
+                    <div id="time">
+                        <img src="images/timer.png" alt="timer" width= 15 height= 15>
+                        <p id="minutes">15 min</p>
+                    </div>
+                </div>
+                <div id="items" class="four">
+                    <img src="images/breakfastburrito.jpg" alt="breakfastburrito" width= 235 height= 161>
+                    <p id="titles">Quick and easy breakfast burrito</p>
+                    <div id="time">
+                        <img src="images/timer.png" alt="timer" width= 15 height= 15>
+                        <p id="minutes">20 min</p>
+                    </div>
+                </div>
+                <div id="items" class="five">
+                    <img src="images/oatmeal.jpeg" alt="oatmeal" width= 235 height= 160>
+                    <p id="titles">Delicious fruity oatmeal!</p>
+                    <div id="time">
+                        <img src="images/timer.png" alt="timer" width= 15 height= 15>
+                        <p id="minutes">5 min</p>
+                    </div>
+                </div>
+                <div id="items" class="six">
+                    <img src="images/spinacheggs.jpeg" alt="spinacheggs" width= 235 height= 160>
+                    <p id="titles">Super healthy spinach and eggs</p>
+                    <div id="time">
+                        <img src="images/timer.png" alt="timer" width= 15 height= 15>
+                        <p id="minutes">7 min</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- "NEW RECIPE" POPUP -->
+        <section id="popup">
+            <div id="newRecipe">
+                <form id="theForm">
+                    <label class="labels"> Recipe Name <input type = "text" id = "recipeName"></label>
+                    <label class="labels"> Approximate cook time <input type = "text" id = "cookTime"></label>
+                    <div id="ingred">
+                        <label class="labels"> Ingrediants <input type = "text" id = "ingredients"></label>
+                    </div>
+                    <button id="plus" class="more">+</button>
+                    <div id="instru">
+                        <label class="labels"> Instructions <input type = "text" id = "instructions"></label>
+                    </div>
+                    <button id="mas" class="more">+</button>
+                    <div>
+                        <p id="theChecks">Check where it goes!</p>
+                        <label id="checkboxes"> Breakfast <input type = "checkbox" id= "checks"></label>
+                        <label id="checkboxes"> Lunch <input type = "checkbox" id= "checks"></label>
+                        <label id="checkboxes"> Dinner <input type = "checkbox" id= "checks"></label>
+                        <label id="checkboxes"> Desserts <input type = "checkbox" id= "checks"></label>
+                        <label id="checkboxes"> Snacks <input type = "checkbox" id= "checks"></label>
+                        <label id="checkboxes"> Vegan <input type = "checkbox" id= "checks"></label>
+                    </div>
+                    <div id="options">
+                        <button id="cancel" class="btns">cancel</button>
+                        <input type="submit" value="submit" id="submit" class="btns">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><a href="https://belenvega.github.io/des157-wi20/">Back to Portal Page</a></p>
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML</a> | <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

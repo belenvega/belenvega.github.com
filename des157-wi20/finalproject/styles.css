@@ -1,0 +1,361 @@
+body {
+    background-color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    padding-left: 50px;
+}
+
+#topnav {
+    margin: none;
+    padding-top: 45px;
+    font-size: 18px;
+}
+
+#topnav ul {
+    display: flex;
+}
+
+#topnav ul li {
+    padding-left: 35px;
+}
+
+#topnav ul li a:hover {
+    color: #FFA630;
+}
+
+#icons {
+    padding-top: 60px;
+    padding-left: 650px;
+}
+
+ul li {
+    list-style-type: none;
+    font-family: Helvetica;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* BODY */
+#content {
+    display: flex;
+}
+
+/* SIDE NAVIGATION */
+#sidebar {
+    padding-left: 50px;
+}
+
+#add {
+    background-color: #FFFFFF;
+    color: black;
+    font-family: Helvetica;
+    border: none;
+    margin-top: 20px;
+}
+
+#add:hover {
+    color: #FF3A5B;
+}
+
+#breakfast:hover {
+    color: #E2ADF2;
+}
+
+#lunch:hover {
+    color: #25CED1;
+}
+
+#dinner:hover {
+    color: #FABC3C;
+}
+
+#desserts:hover {
+    color: #F59CA9;
+}
+
+#snacks:hover {
+    color: #FABC3C;
+}
+
+#vegan:hover {
+    color: #3AB795;
+}
+
+/* HEADERS */
+#headers {
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+
+#container {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    background-color: white;
+    width: 800px;
+    height: 350px;
+}
+
+#header {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#container:hover #header {
+    opacity: 0.3;
+}
+
+footer {
+    text-align: center;
+    color: black;
+    padding-top: 150px;
+    padding-bottom: 75px;
+}
+
+a {
+    color: black;
+    font-family: Helvetica;
+    text-decoration: none;
+}
+
+/* "ADD NEW RECIPE" POPUP */
+#popup {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#newRecipe {
+    font-family: Helvetica;
+    color: white;
+    line-height: 1.6;
+    height: 450px;
+    width: 400px;
+    background: #FFA630;
+    padding: 20px;
+    border: 5px;
+    border-radius: 15px;
+    position: relative; 
+    overflow: scroll;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background-color: #FFFFFF;
+    color: #707070;
+    font-family: Helvetica;
+    border-style: solid;
+    border-color: #707070;
+    border-radius: 15px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    padding: 5px 10px 5px 10px;
+    width: 200px;
+    height: 20px;
+}
+
+.more {
+    background-color: #FFFFFF;
+    color: #707070;
+    font-family: Helvetica;
+    border-style: solid;
+    border-color: #707070;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    width: 30px;
+    height: 25px;
+}
+
+.more:hover {
+    background-color: #EBEBEB;
+    color: #696767;
+}
+
+#theChecks {
+    font-family: Helvetica;
+    font-size: 17px;
+}
+
+#checkboxes {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#checks {
+    padding-left: 20px;
+}
+
+#options {
+    display: flex;
+    float: right;
+}
+
+.btns {
+    background-color: #FFFFFF;
+    color: #707070;
+    font-family: Helvetica;
+    border-style: solid;
+    border-color: #707070;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    width: 75px;
+    height: 25px;
+    margin: 5px;
+}
+
+.btns:hover {
+    background-color: #EBEBEB;
+    color: #696767;
+}
+
+/* BREAKFAST PAGE */
+#myPage {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+
+#singleHeaders {
+    margin-bottom: 20px;
+}
+
+#contain {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-row-gap: 50px;
+}
+
+.new {
+    display:none;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.one {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.two {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.three {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.four {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.five {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.six {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#items {
+    display: flex;
+    flex-direction: column;
+}
+
+#titles {
+    font-family: Helvetica;
+    margin: 10px 0px 3px 0px;
+}
+
+#time {
+    display: flex;
+}
+
+#minutes {
+    font-family: Helvetica;
+    margin: 0px 0px 0px 5px;
+    color: #707070;
+}
+
+#newItems {
+    display: none;
+    flex-direction: column;
+}
+
+#newTitles {
+    font-family: Helvetica;
+    margin: 10px 0px 3px 0px;
+}
+
+#newMinutes {
+    font-family: Helvetica;
+    margin: 0px 0px 0px 5px;
+    color: #707070;
+}
+
+/* INDIVIDUAL PAGES: BREAKFAST */
+h2 {
+    font-family: Helvetica;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-family: Helvetica;
+    margin-top: 50px;
+}
+
+#unordered ul li {
+    font-family: Helvetica;
+    list-style-type: circle;
+    margin: 10px;
+}
+
+#ordered {
+    width: 500px;
+}
+
+#ordered ol li {
+    font-family: Helvetica;
+    line-height: 25px;
+    margin: 20px;
+}

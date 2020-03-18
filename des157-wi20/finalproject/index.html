@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADING + HORIZONTAL NAVIGATION + USER/SEARCH ICONS -->
+    <header>
+        <h1>Good Food</h1>
+        <nav id="topnav">
+            <ul>
+                <li><a href="">Food Log</a></li>
+                <li><a href="index.html">Recipes</a></li>
+            </ul>
+        </nav>
+        <div id="icons">
+            <img src="images/searchicon.png" alt="searchicon" width= 25 height= 25>
+            <img src="images/usericon.png" alt="usericon" width= 25 height= 25>
+        </div>
+    </header>
+
+    <main id="content">
+        <!-- HEADING + HORIZONTAL NAVIGATION + USER/SEARCH ICONS -->
+        <div id="sidebar">
+            <button type="button" value="reset form" id="add">+ ADD RECIPE</button>
+        </div>
+    
+        <!-- HEADER IMAGES FOR/ LINKS TO OTHER PAGES -->
+        <section id="headers">
+            <div id="container">
+                <a href="breakfast.html">
+                <img src="images/breakfast.png" alt="breakfast" width= 800 height= 347 id="header">
+                </a>
+            </div>
+            <div id="container">
+                <img src="images/lunch.png" alt="lunch" width= 800 height= 347 id="header">
+            </div>
+            <div id="container">
+                <img src="images/dinner.png" alt="dinner" width= 800 height= 347 id="header">
+            </div>
+            <div id="container">
+                <img src="images/desserts.png" alt="desserts" width= 800 height= 347 id="header">
+            </div>
+            <div id="container">
+                <img src="images/snacks.png" alt="snacks" width= 800 height= 347 id="header">
+            </div>
+            <div id="container">
+                <img src="images/vegan.png" alt="vegan" width= 800 height= 347 id="header">
+            </div>
+        </section>
+
+        <!-- "NEW RECIPE" POPUP -->
+        <section id="popup">
+            <div id="newRecipe">
+                <form id="theForm">
+                    <label class="labels"> Recipe Name <input type = "text" id = "recipeName"></label>
+                    <label class="labels"> Approximate cook time <input type = "text" id = "cookTime"></label>
+                    <div id="ingred">
+                        <label class="labels"> Ingrediants <input type = "text" id = "ingredients"></label>
+                    </div>
+                    <button id="plus" class="more">+</button>
+                    <div id="instru">
+                        <label class="labels"> Instructions <input type = "text" id = "instructions"></label>
+                    </div>
+                    <button id="mas" class="more">+</button>
+                    <div>
+                        <p id="theChecks">Check where it goes!</p>
+                        <label id="checkboxes"> Breakfast <input type = "checkbox" id= "checks"></label>
+                        <label id="checkboxes"> Lunch <input type = "checkbox" id= "checks"></label>
+                        <label id="checkboxes"> Dinner <input type = "checkbox" id= "checks"></label>
+                        <label id="checkboxes"> Desserts <input type = "checkbox" id= "checks"></label>
+                        <label id="checkboxes"> Snacks <input type = "checkbox" id= "checks"></label>
+                        <label id="checkboxes"> Vegan <input type = "checkbox" id= "checks"></label>
+                    </div>
+                    <div id="options">
+                        <button id="cancel" class="btns">cancel</button>
+                        <input type="submit" value="submit" id="submit" class="btns">
+                    </div>
+                </form>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><a href="https://belenvega.github.io/des157-wi20/">Back to Portal Page</a></p>
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML</a> | <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

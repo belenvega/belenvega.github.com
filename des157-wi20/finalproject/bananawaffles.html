@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADING + HORIZONTAL NAVIGATION + USER/SEARCH ICONS -->
+    <header>
+        <h1>Good Food</h1>
+        <nav id="topnav">
+            <ul>
+                <li><a href="">Food Log</a></li>
+                <li><a href="index.html">Recipes</a></li>
+            </ul>
+        </nav>
+        <div id="icons">
+            <img src="images/searchicon.png" alt="searchicon" width= 25 height= 25>
+            <img src="images/usericon.png" alt="usericon" width= 25 height= 25>
+        </div>
+    </header>
+
+    <main id="content">
+        <!-- VERTICAL NAVIGATION -->
+        <div id="sidebar">
+            <button type="button" value="reset form" id="add">+ ADD RECIPE</button>
+            <nav id="sidenav">
+                <ul>
+                    <li><a href="breakfast.html" id="breakfast">Breakfast</a></li>
+                    <li><a href="" id="lunch">Lunch</a></li>
+                    <li><a href="" id="dinner">Dinner</a></li>
+                    <li><a href="" id="desserts">Desserts</a></li>
+                    <li><a href="" id="snacks">Snacks</a></li>
+                    <li><a href="" id="vegan">Vegan</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="myPage">
+            <!-- HEADER IMAGE -->
+            <section class="singleImages">
+                <div id="frame">
+                    <img src="images/bigbwaffles.jpg" alt="breakfast" width= 400 height= 349 id="singleImage">
+                </div>
+                
+                <!-- RECIPE INFORMATION -->
+                <div id="theRecipe">
+                    <h2>Healthy banana waffles!</h2>
+                    <div id="time">
+                        <img src="images/timer.png" alt="timer" width= 15 height= 15>
+                        <p id="minutes">10 min</p>
+                    </div>
+                    <div>
+                        <h3>Ingrediants</h3>
+                        <div id="unordered">
+                            <ul>
+                                <li>1 banana</li>
+                                <li>2 eggs</li>
+                                <li>pinch of baking powder</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Instructions</h3>
+                        <div id="ordered">
+                            <ol>
+                                <li>Smash the banana until it's turned into a pudding consistency</li>
+                                <li>Mix the smashed banana, two eggs, and pinch of baking powder in a large bowl until everything is evenly blended. Make sure the mixture is thick enough to hold when placed in to the waffle maker. </li>
+                                <li>Pour enough of the waffle mix into the waffle maker and leave until it's cooked.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- "NEW RECIPE" POPUP -->
+        <section id="popup">
+            <div id="newRecipe">
+                <form id="theForm">
+                    <label class="labels"> Recipe Name <input type = "text" id = "recipeName"></label>
+                    <label class="labels"> Approximate cook time <input type = "text" id = "cookTime"></label>
+                    <div id="ingred">
+                        <label class="labels"> Ingrediants <input type = "text" id = "ingredients"></label>
+                    </div>
+                    <button id="plus" class="more">+</button>
+                    <div id="instru">
+                        <label class="labels"> Instructions <input type = "text" id = "instructions"></label>
+                    </div>
+                    <button id="mas" class="more">+</button>
+                    <div>
+                        <p id="theChecks">Check where it goes!</p>
+                        <label id="checkboxes"> Breakfast <input type = "checkbox" id= "checks"></label>
+                        <label id="checkboxes"> Lunch <input type = "checkbox" id= "checks"></label>
+                        <label id="checkboxes"> Dinner <input type = "checkbox" id= "checks"></label>
+                        <label id="checkboxes"> Desserts <input type = "checkbox" id= "checks"></label>
+                        <label id="checkboxes"> Snacks <input type = "checkbox" id= "checks"></label>
+                        <label id="checkboxes"> Vegan <input type = "checkbox" id= "checks"></label>
+                    </div>
+                    <div id="options">
+                        <button id="cancel" class="btns">cancel</button>
+                        <input type="submit" value="submit" id="submit" class="btns">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><a href="https://belenvega.github.io/des157-wi20/">Back to Portal Page</a></p>
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML</a> | <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
